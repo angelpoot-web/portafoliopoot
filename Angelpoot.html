@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <title>Portafolio de Evidencia Profesional</title>
+  <style>
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
+    body {
+      font-family: 'Segoe UI', sans-serif;
+      background-color: #f0f2f5;
+      color: #333;
+    }
+
+    header {
+      background-color: #0078D7;
+      color: white;
+      padding: 20px;
+      text-align: center;
+      box-shadow: 0 2px 5px rgba(0,0,0,0.2);
+    }
+
+    header h1 {
+      font-size: 28px;
+      margin-bottom: 5px;
+    }
+
+    header p {
+      font-size: 18px;
+      font-style: italic;
+    }
+
+    nav {
+      background-color: #ffffff;
+      display: flex;
+      justify-content: center;
+      box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+    }
+
+    nav a {
+      padding: 15px 25px;
+      text-decoration: none;
+      color: #0078D7;
+      font-weight: bold;
+      transition: background 0.3s;
+    }
+
+    nav a:hover {
+      background-color: #e6f0ff;
+    }
+
+    section {
+      padding: 40px 20px;
+      max-width: 900px;
+      margin: auto;
+      display: none;
+      animation: fadeIn 0.5s ease;
+    }
+
+    section.active {
+      display: block;
+    }
+
+    h2 {
+      color: #0078D7;
+      margin-bottom: 20px;
+    }
+
+    .image-placeholder {
+      width: 100%;
+      height: 300px;
+      background-color: #ddd;
+      border: 2px dashed #aaa;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      color: #666;
+      font-size: 18px;
+      margin-bottom: 20px;
+    }
+
+    @keyframes fadeIn {
+      from { opacity: 0; transform: translateY(10px); }
+      to { opacity: 1; transform: translateY(0); }
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <h1>Portafolio de Evidencia Profesional</h1>
+    <p>Ángel Adriel Poot Cruz</p>
+  </header>
+
+  <nav>
+    <a href="#" onclick="showSection('mision')">Misión</a>
+    <a href="#" onclick="showSection('vision')">Visión</a>
+    <a href="#" onclick="showSection('cosmovision')">Cosmovisión</a>
+    <a href="#" onclick="showSection('evidencias')">Evidencias</a>
+    <a href="#" onclick="showSection('bibliografia')">Bibliografía</a>
+  </nav>
+
+  <section id="mision" class="active">
+    <h2>Misión</h2>
+    <p>Escribe aquí tu misión profesional, tus objetivos y propósito como individuo o profesional.</p>
+  </section>
+
+  <section id="vision">
+    <h2>Visión</h2>
+    <p>Describe tu visión a futuro, tus metas y cómo te proyectas en el ámbito profesional.</p>
+  </section>
+
+  <section id="cosmovision">
+    <h2>Cosmovisión</h2>
+    <p>Expón tu perspectiva del mundo, tus valores, creencias y cómo influyen en tu desarrollo profesional.</p>
+  </section>
+
+  <section id="evidencias">
+    <h2>Evidencias</h2>
+    <div class="image-placeholder">Aquí puedes insertar tus imágenes de evidencias</div>
+    <div class="image-placeholder">Otra imagen o evidencia</div>
+    <div class="image-placeholder">Espacio adicional para más evidencias</div>
+  </section>
+
+  <section id="bibliografia">
+    <h2>Bibliografía</h2>
+    <p>Incluye aquí las fuentes que has consultado para tu formación o para elaborar este portafolio.</p>
+    <ul>
+      <li>Autor, Título, Editorial, Año.</li>
+      <li>Artículo o sitio web relevante.</li>
+    </ul>
+  </section>
+
+  <script>
+    function showSection(id) {
+      document.querySelectorAll('section').forEach(sec => {
+        sec.classList.remove('active');
+      });
+      document.getElementById(id).classList.add('active');
+    }
+  </script>
+
+</body>
+</html>
