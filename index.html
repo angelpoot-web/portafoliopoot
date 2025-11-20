@@ -1,0 +1,348 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Portafolio de Angel Poot</title>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet">
+  <style>
+    * { box-sizing: border-box; margin: 0; padding: 0; }
+    body {
+      font-family: 'Poppins', sans-serif;
+      background: linear-gradient(135deg, #8e24aa, #43a047);
+      background-size: 400% 400%;
+      animation: gradientMove 15s ease infinite;
+      color: #fff;
+    }
+    @keyframes gradientMove {
+      0% { background-position: 0% 50%; }
+      50% { background-position: 100% 50%; }
+      100% { background-position: 0% 50%; }
+    }
+    header#banner {
+      height: 280px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 2.5rem;
+      font-weight: 700;
+      text-shadow: 2px 2px 6px #000;
+      animation: fadeIn 1s ease;
+    }
+    nav {
+      background-color: rgba(0,0,0,0.3);
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      padding: 1rem;
+      position: sticky;
+      top: 0;
+      z-index: 1000;
+      backdrop-filter: blur(6px);
+    }
+    nav a {
+      color: #fff;
+      text-decoration: none;
+      margin: 0.5rem;
+      font-weight: 600;
+      font-size: 1.1rem;
+      position: relative;
+      transition: color 0.3s ease;
+      cursor: pointer;
+    }
+    nav a::after {
+      content: '';
+      position: absolute;
+      left: 0;
+      bottom: -4px;
+      width: 100%;
+      height: 2px;
+      background: #ffeb3b;
+      transform: scaleX(0);
+      transition: transform 0.3s ease;
+    }
+    nav a:hover {
+      color: #ffeb3b;
+    }
+    nav a:hover::after {
+      transform: scaleX(1);
+    }
+    .page {
+      display: none;
+      opacity: 0;
+      transform: translateY(40px);
+      transition: opacity 0.6s ease, transform 0.6s ease;
+      padding: 2rem;
+    }
+    .page.active {
+      display: block;
+      opacity: 1;
+      transform: translateY(0);
+    }
+    .content-box {
+      background-color: rgba(255, 255, 255, 0.1);
+      padding: 2rem;
+      border-radius: 16px;
+      box-shadow: 0 8px 20px rgba(0,0,0,0.3);
+      backdrop-filter: blur(8px);
+      max-width: 1000px;
+      margin: auto;
+      color: #fff;
+    }
+    h2 {
+      font-size: 2rem;
+      margin-bottom: 1rem;
+      border-bottom: 2px solid #ffeb3b;
+      padding-bottom: 0.5rem;
+    }
+    h3 {
+      font-size: 1.5rem;
+      margin-top: 2rem;
+      margin-bottom: 0.5rem;
+      color: #ffeb3b;
+    }
+    .image-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      gap: 1rem;
+      margin-top: 1rem;
+    }
+    .image-grid img {
+      width: 100%;
+      border-radius: 12px;
+      box-shadow: 0 4px 12px rgba(0,0,0,0.4);
+      transition: transform 0.3s ease;
+    }
+    .image-grid img:hover {
+      transform: scale(1.05);
+    }
+    @keyframes fadeIn {
+      from { opacity: 0; transform: translateY(30px); }
+      to { opacity: 1; transform: translateY(0); }
+    }
+    @media (max-width: 600px) {
+  body {
+    font-size: 16px;
+    line-height: 1.6;
+    padding: 0 1rem;
+  }
+
+  header#banner {
+    font-size: 1.6rem;
+    padding: 1rem;
+    height: auto;
+    text-align: center;
+  }
+
+  nav {
+    flex-direction: column;
+    align-items: center;
+    padding: 0.5rem 0;
+    gap: 0;
+  }
+
+  nav a {
+    font-size: 0.95rem;
+    padding: 0.4rem 0.8rem;
+    margin: 0.2rem 0;
+    width: 100%;
+    text-align: center;
+    border-bottom: 1px solid rgba(255,255,255,0.1);
+  }
+
+  nav a::after {
+    display: none;
+  }
+
+  .content-box {
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+    margin: 1rem 0;
+    border-radius: 12px;
+    max-width: 100%;
+  }
+
+  .image-grid {
+    grid-template-columns: 1fr;
+  }
+
+  h2 {
+    font-size: 1.4rem;
+  }
+
+  h3 {
+    font-size: 1.1rem;
+  }
+
+  p {
+    font-size: 1rem;
+  }
+
+  .page {
+    scroll-margin-top: 80px;
+  }
+}
+    @media (max-width: 480px) {
+  body {
+    font-size: 16px;
+    line-height: 1.6;
+    padding: 0 1rem;
+  }
+
+  header#banner {
+    font-size: 1.8rem;
+    padding: 1rem;
+    text-align: center;
+    height: auto;
+  }
+
+  nav {
+    flex-direction: column;
+    align-items: center;
+    padding: 0.5rem;
+  }
+
+  nav a {
+    display: block;
+    margin: 0.3rem 0;
+    font-size: 1rem;
+    padding: 0.6rem 1rem;
+    width: 100%;
+    text-align: center;
+  }
+
+  .content-box {
+    padding: 1rem;
+    margin: 1rem 0;
+    border-radius: 12px;
+  }
+
+  .image-grid {
+    grid-template-columns: 1fr;
+  }
+
+  h2 {
+    font-size: 1.4rem;
+  }
+
+  h3 {
+    font-size: 1.1rem;
+  }
+}
+  </style>
+</head>
+<body>
+  <header id="banner">Portafolio de Angel Poot</header>
+
+  <nav>
+    <a href="#" data-page="inicio">Inicio</a>
+    <a href="#" data-page="angel">Angel Poot Es</a>
+    <a href="#" data-page="aula">Mi Vida en el Aula</a>
+    <a href="#" data-page="cv">Curriculum Vitae</a>
+    <a href="#" data-page="accion">Angel en Acción</a>
+    <a href="#" data-page="composiciones">Composiciones</a>
+    <a href="#" data-page="pensar">Maneras de Pensar</a>
+    <a href="#" data-page="articulo">Artículo de Investigación</a>
+    <a href="#" data-page="corazon">Mi Corazón</a>
+    <a href="#" data-page="hastaaqui">Hasta Aquí Nos Ayudó Jehová</a>
+  </nav>
+
+  <div id="inicio" class="page active">
+    <div class="content-box">
+      <h2>Inicio</h2>
+      <h3>Misión</h3>
+      <p><em>Pendiente de escribir</em></p>
+      <h3>Visión</h3>
+      <p><em>Pendiente de escribir</em></p>
+      <h3>Cosmovisión</h3>
+      <p><em>Pendiente de escribir</em></p>
+      <h3>Acerca de mí</h3>
+      <p>
+Yo me considero una persona muy indecisa y difícil de saber cómo se siente.  
+A veces estoy muy cansado o a veces con mucha energía.  
+Soy extrovertido con las personas que me generan confianza, pero con alguien que no conozco para nada  
+estoy un poco penoso, aunque con un poco de plática agarro confianza.
+
+Últimamente no soy una persona muy activa con el deporte. Antes hacía boxeo, pero desde que me lesioné  
+lo dejé por un tiempo. Intenté volver, pero me pesaba más. Ahora solo camino y hago un poco de sombra  
+con mancuernas.
+
+Mi pasión es la tecnología. Desde pequeño he tenido la curiosidad de todo lo relacionado, no solo con  
+videojuegos, sino con todo: computadoras, transmisiones, programas y aplicaciones.  
+Por eso quiero estudiar una ingeniería. Todavía no sé cómo ni dónde, pero eso quiero estudiar.
+
+Para ir terminando el apartado, me gustaría mencionar que actualmente soy una persona que le encanta  
+ser bondadosa y amigable. Me encanta la tranquilidad y, de vez en cuando, hacer un relajo.  
+Aunque lo que me encantaría mencionar es que actualmente soy feliz con mi pareja sentimental/amorosa.  
+Ella es lo que más amo y a quien quiero amar. Aunque parezca solo un amor joven, me encantaría que  
+(si, claro, está en planes de Dios) estemos juntos, llegar al casamiento y ser felices.
+      </p>
+      <div class="image-grid">
+        <img src="foto1.jpg" alt="Foto 1">
+        <img src="foto2.jpg" alt="Foto 2">
+        <img src="foto3.jpg" alt="Foto 3">
+      </div>
+    </div>
+  </div>
+
+  <div id="angel" class="page"><div class="content-box"><h2>Angel Poot Es</h2><p><em>Contenido pendiente de escribir</em></p></div></div>
+  <div id="aula" class="page"><div class="content-box"><h2>Mi Vida en el Aula</h2><p><em>Contenido pendiente de escribir</em></p></div></div>
+  <div id="cv" class="page"><div class="content-box"><h2>Curriculum Vitae</h2><p><em>Contenido pendiente de escribir</em></p></div></div>
+  <div id="accion" class="page"><div class="content-box"><h2>Angel en Acción</h2><p><em>Contenido pendiente de escribir</em></p></div></div>
+  <div id="composiciones" class="page">
+  <div class="content-box">
+    <h2>Composiciones</h2>
+    <p><em>Contenido pendiente de escribir</em></p>
+  </div>
+</div>
+
+<div id="pensar" class="page">
+  <div class="content-box">
+    <h2>Maneras de Pensar</h2>
+    <p><em>Contenido pendiente de escribir</em></p>
+  </div>
+</div>
+
+<div id="articulo" class="page">
+  <div class="content-box">
+    <h2>Artículo de Investigación</h2>
+    <p><em>Contenido pendiente de escribir</em></p>
+  </div>
+</div>
+
+<div id="corazon" class="page">
+  <div class="content-box">
+    <h2>Mi Corazón</h2>
+    <p><em>Contenido pendiente de escribir</em></p>
+  </div>
+</div>
+
+<div id="hastaaqui" class="page">
+  <div class="content-box">
+    <h2>Hasta Aquí Nos Ayudó Jehová</h2>
+    <p><em>Contenido pendiente de escribir</em></p>
+  </div>
+</div>
+
+<script>
+  document.addEventListener("DOMContentLoaded", () => {
+    const links = document.querySelectorAll("nav a");
+    const pages = document.querySelectorAll(".page");
+
+    links.forEach(link => {
+      link.addEventListener("click", e => {
+        e.preventDefault();
+        const id = link.getAttribute("data-page");
+        const target = document.getElementById(id);
+
+        if (target) {
+          pages.forEach(p => p.classList.remove("active"));
+          target.classList.add("active");
+          window.scrollTo({ top: 0, behavior: "smooth" });
+        }
+      });
+    });
+  });
+</script>
+</body>
+</html>
