@@ -6,62 +6,229 @@
   <title>Portafolio de Angel Poot</title>
   <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="index.css">
-  <style>
-    /* Estilos extras específicos para la integración de la calculadora */
-    .calculator-container {
-      background-image: url('img1.png');
-      background-size: cover;
-      background-position: center;
-      padding: 20px;
-      border-radius: 10px;
-      color: blue;
-      font-family: 'System', sans-serif;
-      min-height: 600px;
-      display: flex;
-      flex-direction: column;
-      align-items: center;
-      position: relative;
-    }
-
-    .calc-title { font-size: 50px; font-weight: bold; background-color: white; padding: 5px 15px; margin-top: 50px;}
-    .calc-desc { font-size: 20px; font-weight: bold; background-color: white; padding: 5px; text-align: center; margin-top: 10px;}
-    
-    .calc-btn-large {
-      background-color: white; color: blue; font-family: "Arial", sans-serif; font-size: 25px; font-weight: bold;
-      border: none; padding: 15px 40px; cursor: pointer; border-radius: 5px; margin-top: 50px; transition: 0.3s;
-    }
-    .calc-btn-large:hover { background-color: #f0f0f0; }
-
-    .calc-btn-nav {
-      background-color: white; color: blue; font-family: "Arial", sans-serif; font-size: 14px; font-weight: bold;
-      border: none; padding: 10px 15px; cursor: pointer; border-radius: 3px; position: absolute; bottom: 20px; left: 20px;
-    }
-
-    .calc-btn-action {
-      background-color: white; color: blue; font-family: "Arial", sans-serif; font-size: 14px; font-weight: bold;
-      border: none; padding: 10px 20px; cursor: pointer; border-radius: 3px; margin-top: 20px;
-    }
-
-    .calc-subpage { display: none; width: 100%; display: flex; flex-direction: column; align-items: center; }
-    .calc-subpage.active-sub { display: flex; }
-
-    .calc-input-group { margin: 15px 0; text-align: center; }
-    .calc-label { background-color: white; font-weight: bold; font-size: 20px; padding: 2px 5px; display: inline-block; margin-bottom: 5px;}
-    .calc-entry { 
-      background-color: black; color: white; font-family: "Arial", sans-serif; font-size: 20px;
-      border: none; padding: 5px; width: 200px; text-align: right; border-radius: 3px;
-    }
-
-    .balancin-row { display: flex; justify-content: center; align-items: center; gap: 20px; margin-top: 30px; width: 90%;}
-    .balancin-col { display: flex; flex-direction: column; align-items: center; }
-    .balancin-equals { font-size: 40px; font-weight: bold; background-color: white; padding: 0 10px;}
-    .balancin-entry { width: 80px; }
-
-    .calc-result-box {
-      background-color: black; color: white; font-family: "Arial", sans-serif; font-size: 20px; font-weight: bold;
-      padding: 10px; width: 250px; text-align: right; border-radius: 3px; margin-top: 10px; min-height: 30px;
-    }
-  </style>
 </head>
 <body>
-  <header id="banner">Portafolio de
+  <header id="banner">Portafolio de Angel Poot</header>
+
+  <nav>
+    <a href="#" data-page="inicio">Inicio</a>
+    <a href="#" data-page="angel">Angel Poot Es</a>
+    <a href="#" data-page="aula">Mi Vida en el Aula</a>
+    <a href="#" data-page="cv">Curriculum Vitae</a>
+    <a href="#" data-page="accion">Angel en Acción</a>
+    <a href="#" data-page="composiciones">Composiciones</a>
+    <a href="#" data-page="pensar">Maneras de Pensar</a>
+    <a href="#" data-page="articulo">Artículo de Investigación</a>
+    <a href="#" data-page="corazon">Mi Corazón</a>
+    <a href="#" data-page="hastaaqui">Hasta Aquí Nos Ayudó Jehová</a>
+  </nav>
+
+  <div id="inicio" class="page active">
+    <div class="content-box">
+      <h2>Inicio</h2>
+      <h3>Misión</h3>
+      <p>
+Mi misión es lograr mis propositos academicos, lograr aprender lo que mas pueda antes y despues de la
+Universidad. Quiero empezar a emprender con mis conocimientos y tener experiencia en este sector tan 
+interesante que es la programación. 
+<br><br>
+De igual manera quiero seguir apoyando en la iglesia, tanto en programas o cosas que necesiten, mi
+misión es hacer que otros aprendan de Dios con mis actitudes, ser un ejemplo para los demas, que todo
+lo que se ponga a mano de Dios el lo bendecira si lo pedimos con fe, amor y gratitud.
+<br><br>
+      </p>
+      <h3>Visión</h3>
+      <p>
+Yo me veo en un futuro logrando lo que me propuse, terminar la universidad, no espero asi con 10 todo 
+y calificación perfecta, lo unico que quiero es aprender todo lo que requiera, no importa el fallo,
+si no saber solucionarlo. 
+<br><br>
+De igual manera quiero en este tiempo aprender algún otro oficio, desde la pandemía me propuse a
+no quedarme estancado solo con el estudio, sino aprender lo mas que pueda 
+<br><br>
+      </p>
+      <h3>Cosmovisión</h3>
+      <p>
+Mi religión desde niño, desde que aprendi a saber que es cada cosa, ha sido la religión adventista.
+Siempre mi mayor pensamiento es que un día Jesús volverá en su segunda venida, que juzgara deacuerdo 
+a lo que ha hecho cada uno. Yo anhelo que poder entrar en esa puerta angosta y vivir para la eternidad
+y alabar a nuestro padre amado.
+<br><br>
+Lastimosamente como todo ser humano e pecado, pero quiero cambiar y ser diferente, no pensar que por un 
+error no merezco el perdon, pero tampoco quiero pedir y pedir en todo momento, juzgar sin razón a los demas
+y pensar que yo soy mejor. Yo siempre pido por un corazón que sea blando pero fuerte para soportar las pruebas.
+<br><br>
+      </p>
+      <h3>Acerca de mí</h3>
+      <p>
+Yo me considero una persona muy indecisa y difícil de saber cómo se siente.  
+A veces estoy muy cansado o a veces con mucha energía.  
+Soy extrovertido con las personas que me generan confianza, pero con alguien que no conozco para nada  
+estoy un poco penoso, aunque con un poco de plática agarro confianza.
+<br><br>
+Últimamente no soy una persona muy activa con el deporte. Antes hacía boxeo, pero desde que me lesioné  
+lo dejé por un tiempo. Intenté volver, pero me pesaba más. Ahora solo camino y hago un poco de sombra  
+con mancuernas.
+<br><br>
+Mi pasión es la tecnología. Desde pequeño he tenido la curiosidad de todo lo relacionado, no solo con  
+videojuegos, sino con todo: computadoras, transmisiones, programas y aplicaciones.  
+Por eso quiero estudiar una ingeniería. Todavía no sé cómo ni dónde, pero eso quiero estudiar.
+<br><br>
+      </p>
+      <div class="image-grid">
+        <img src="foto1.jpg" alt="Foto 1">
+        <img src="foto2.jpg" alt="Foto 2">
+        <img src="foto3.jpg" alt="Foto 3">
+      </div>
+    </div>
+  </div>
+
+  <div id="angel" class="page"><div class="content-box">
+    <h2>Angel Poot Es</h2>
+    <h3>Autobiografía</h3>
+     <div class="image-grid">
+       <img src="foto4.jpg" alt="Foto 4">
+       <img src="foto5.jpg" alt="Foto 5">
+       <img src="foto6.jpg" alt="Foto 6">
+     </div>
+    <br><br>
+    <p>
+     Angel Adriel Poot Cruz nació el 3 de julio de 2026 en Cozumel, Quintana ROO. Su familia es algo numerosa, mas su familia paterna, con la
+     cual es la que ha pasado la mayor parte del tiempo.
+     <br><br>
+     Angel desde pequeño era muy activo y relajista, cosa la cual perjudicaba en sus estudios, no le gustaba estudiar y hasta lloraba por hacer la tarea.
+     Todo cambio durate la pandemia, el cursaba 6to de primaria en la escuela Eladio Novelo Gil cuando ocurrió la pandemia. Durante ese tiempo de encierro
+     al no tener algún dispositivo electrónico como una consola, computadora propia o celular para jugar, se aburría demasiado, solo con la 
+     tele se fastidiaba; había un pequeño celular el cual solo le prestaban para estudiar 3 horas al día, entonces, por el encierro y aburrimiento se puso 
+     a estudiar. No era para nada bueno en matématicas por lo tanto se la pasaba viendo videos de un youtuber muy famoso para ese tiempo, Daniel Carreon; 
+     Angel sentía que los temas eran mas fáciles de aprender, divisiones, sumas de fracciones, jerarquía de operaciones y los temas mas avanzados para un niño 
+     como lo son ecuaciones de primer y segundo grado, increible solo por el aburrimiento aprendió tantos temas de matématicas que ni eran para su grado ni edad.
+     <br><br>
+     Tambien por flojo, el no leía, se le hacía pesado y aburrido, pero lo obligaron a leer... era una enciclopedia sobre tecnología, leyo sobre la 
+     evolución de las computadoras, los lenguajes de programación (a gran escala), consolas (y videojuegos) y todo ese mundo tecnológico tan sorprendente 
+     y amplió, desde ese entonces se intereso mucho mas en la tecnologia, no solo en los videojuegos como algunos pensarán, sino en reparaciones, programación,
+     lógica, etc. Desde ese día las ideas de inovar se volvieron muchos mas grandes, pensar en, que pasa si hago esto, si aplico esto. Obvio no solo se cerro en 
+     esos temas, tambien le intereso la biologia, quimica, física, psicología de tantos libros que le obligaron a leer... solo que tenía en mente que 
+     todo se deriva y se usa con la tecnología, por lo cual sus estudios los orientó a esta rama tan gigantesca del estudio y la ciencia.
+     <br><br>
+     Hoy en día sigue basando sus estudios enfocados en la tecnología, una prueba de ello es la página la cual estan leyendo esto, cada cosa fue hecha por el,
+     si, algo simple y con bastante ayuda pero es un gran avance y un logro para él, ¿su meta? no solo es avanzar académicamente sino lograr algo que de verdad
+     le guste y apasione, es una forma de decir gracias a su familia la cual lo ha apoyado desde siempre en todo momento y lugar, a cada amigo y ser querido que
+     se ha quedado apoyado y dando su granito de arena para que pueda avanzar; sabe que el camino no será facil y que siempre existiran problemas, pero confía en 
+     Dios de que, si es su voluntad, todo saldrá bien.
+    </p> 
+    <div class="image-grid">
+      <img src="foto7.jpg" alt="Foto 7">
+      <img src="foto8.jpg" alt="Foto 8">
+      <img src="foto9.jpg" alt="Foto 9">
+     </div>
+    </div>
+  </div>
+  
+  <div id="aula" class="page"><div class="content-box">
+    <h2>Mi Vida en el Aula</h2>
+    <h3>1er Año</h3>
+    <p>
+     Cuando entré a la Preparatoria (Colegio Cristóbal Colón) me sentía emocionado y algo nervioso, por la razón de que me encontraría a mis 
+     antiguos compañeros de clase de primaría. El primer día fue raro, solo llegué y no hable con casi nadie, solo con los que habían llegado conmigo
+     como nuevos alumnos. De ahí reconocí a Jady, ella me caía mal en la primaria, pero le hable solo porque sabía que ella estudió conmigo 
+     en la secundaría, aunque nunca cruzamos palabras pero si reconocía que era ella. De ahí nos empezamos a juntar todos y la verdad co todo el salón se 
+     sentía esa vibra de amistad y compañerismo... pero también de relajo y pleitos, algo lo cual estoy acostumbrado porque siempre me han tocado todo este
+     tipo de salones. La verdad el primer año lo pasé bien aun que casi no hablará pero jamás me hicieron a un lado e intentaban incluirme en jugar en los recesos
+     y educación física. En la parte académica iba bien, casi ningún tema se me complicó y los profesores explicaban muy bien.
+    </p>
+    <br><br>
+    <h3>2do año</h3>
+    <p>
+     En mi segundo año fue muy rapido para mi, casi no hice algún cambio, solo me dedique mas a mi area y seguir. Algunos trabajos se me complicaron 
+     por mi falta de talento en las manualidades pero minimo las entregaba. Lo unico que si me dio trabajo fue con ingles, la verdad aprender un segundo idioma si
+     es dificil para mi. Pero todo lo que paso en este año estuvo bien.
+    </p>
+    <br><br>
+    <div class="image-grid">
+      <img src="foto10.jpg" alt="Foto 10">
+      <img src="foto11.jpg" alt="Foto 11">
+      <img src="foto12.jpg" alt="Foto 12">
+    <h3>3er año</h3>
+    <p>
+     Este año sinceramente ha sido el mejor, empecé mas a disfrutar aunque sea un poco más, hice cosas que nunca pensé hacer y la verdad aunque tuve malos 
+     momentos casi no me arrepiento de nada, aunque ya somo pocos en el salón ha sido el mejor grupo, con nuestros problemas y todo pero somos unidos de cierta 
+     forma. Pero estoy emocionado porque despues de tanto tiempo y sacrificios ya estoy en la recta final y estoy tan feliz. Deseo lo mejor a todos mis comapñeros 
+     y amigos que quiero tanto.
+    </p>
+    <br><br>
+     <div class="image-grid">
+      <img src="foto10.jpg" alt="Foto 13">
+      <img src="foto11.jpg" alt="Foto 14">
+      <img src="foto12.jpg" alt="Foto 15">
+     </div>
+   </div>
+  </div>
+  
+  <div id="cv" class="page"><div class="content-box">
+  <h2>Curriculum Vitae</h2>
+  <p>Contenido pendiente de escribir</p>
+  </div>
+</div>
+
+  <div id="accion" class="page"><div class="content-box">
+  <h2>Angel en Acción</h2>
+  <p>Contenido pendiente de escribir</p>
+  </div>
+</div>
+  
+  <div id="composiciones" class="page"><div class="content-box">
+  <h2>Composiciones</h2>
+  <p>Contenido pendiente de escribir</p>
+  </div>
+</div>
+
+<div id="pensar" class="page"><div class="content-box">
+  <h2>Maneras de Pensar</h2>
+  <p>Contenido pendiente de escribir</p>
+  </div>
+</div>
+
+<div id="articulo" class="page"><div class="content-box">
+  <h2>Artículo de Investigación</h2>
+  <p>Contenido pendiente de escribir</p>
+  </div>
+</div>
+
+<div id="corazon" class="page"><div class="content-box">
+  <h2>Mi Corazón</h2>
+  <p>Contenido pendiente de escribir</p>
+  </div>
+</div>
+
+<div id="hastaaqui" class="page">
+  <div class="content-box">
+    <h2>Hasta Aquí Nos Ayudó Jehová</h2>
+    <p><em>Contenido pendiente de escribir</em></p>
+  </div>
+</div>
+
+<script>
+  document.addEventListener("DOMContentLoaded", () => {
+    const links = document.querySelectorAll("nav a");
+    const pages = document.querySelectorAll(".page");
+
+    links.forEach(link => {
+      link.addEventListener("click", e => {
+        e.preventDefault();
+        const id = link.getAttribute("data-page");
+        const target = document.getElementById(id);
+
+        if (target) {
+          pages.forEach(p => p.classList.remove("active"));
+          target.classList.add("active");
+          window.scrollTo({ top: 0, behavior: "smooth" });
+        }
+      });
+    });
+  });
+</script>
+</body>
+
+</html>
+
