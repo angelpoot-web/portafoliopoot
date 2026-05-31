@@ -204,3 +204,28 @@ h3 {
     font-size: 1.1rem;
   }
 }
+/* --- ESTILOS PARA LA SECCIÓN CURRICULUM VITAE --- */
+.cv-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center; /* Centra horizontalmente */
+  justify-content: center;
+  text-align: center;
+  padding: 20px 0;
+  width: 100%;
+}
+
+.cv-img {
+  max-width: 100%;      
+  width: 500px;         /* Tamaño de la imagen. Ajústalo a tu gusto */
+  height: auto;
+  border-radius: 8px;   
+  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.5); /* Sombra para que resalte */
+  border: 3px solid #ffeb3b; /* Borde amarillo para combinar con tu diseño */
+  margin-bottom: 25px;
+  transition: transform 0.3s ease; /* Efecto al pasar el mouse */
+}
+
+.cv-img:hover {
+  transform: scale(1.02); /* Pequeño zoom al pasar el cursor */
+}
